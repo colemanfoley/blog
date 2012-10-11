@@ -80,4 +80,8 @@ class PostsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def hello
+    "Hello #{self.name}"
+  end
 end
